@@ -1,0 +1,84 @@
+nav {
+    @media(max-width: $r_mob_600) {
+        display: none;
+    }
+}
+.nav {
+    max-width: 44rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    @media (max-width: $r_desk_hd_1300) {
+        letter-spacing:.5px;
+    }
+    &-item {
+        @media (max-width: $r_desk_hd_1300) {
+            margin: 0 1rem;
+        }
+        &:nth-child(1) {
+            margin-left: 0rem;
+            white-space: nowrap;
+
+        }
+        &:nth-child(2) {
+            margin-left: 2rem;
+            white-space: nowrap;
+            @media (max-width: $r_desk_hd_1300) {
+                margin-left: 1rem;
+            }
+        }
+        &:nth-child(3) {
+            margin-left: 4.46rem;
+            white-space: nowrap;
+            @media (max-width: $r_desk_hd_1300) {
+                margin-left: 3rem;
+            }
+        }
+        &:nth-child(4) {
+            margin-left: 2.07rem;
+            white-space: nowrap;
+            @media (max-width: $r_desk_hd_1300) {
+                margin-left: 1rem;
+            }
+        }
+        &:nth-child(5) {
+            margin-left: 2rem;
+            white-space: nowrap;
+            margin-right: 40rem;
+            @media (max-width: $r_desk_hd_1300) {
+                margin-left: 1rem;
+                margin-right: 2rem;
+            }
+        }
+    }
+    &-link {
+        position: relative;
+        text-decoration: none;
+        color: rgba(31, 32, 65, 0.5);
+        transition: 0.2s ease color;
+        &-arrow {
+            position: absolute;
+            width: 1.1rem;
+            height: 1.1rem;
+            background-image: url('../Ul_kit/nav/arrow.svg');
+            background-repeat: no-repeat;
+            background-size:contain;
+            right: -1.87rem;
+            top: 40%;
+        }
+        &:hover {
+            color: rgba(16, 16, 17, 0.5), 50;
+        }
+        &.active {
+        color: rgba(31, 32, 65, 0.75);    
+        font-weight: 700;
+        color: rgba(16, 16, 17, 0.5), 50;
+        &::after {
+            opacity: 1;
+        }
+        
+    }
+  }
+}
+

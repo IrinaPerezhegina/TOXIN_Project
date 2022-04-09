@@ -1,0 +1,92 @@
+@font-face {
+	font-family: 'Unnamed';
+	src: url('../fonts/Unnamed-Regular.eot');
+	src: local('☺'), url('../fonts/Unnamed-Regular.woff') format('woff'), url('../fonts/Unnamed-Regular.ttf') format('truetype'), url('../fonts/Unnamed-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Regular.eot');
+	src: local('☺'), url('../fonts/Montserrat-Regular.woff') format('woff'), url('../fonts/Montserrat-Regular.ttf') format('truetype'), url('../fonts/Montserrat-Regular.svg') format('svg');
+	font-weight:normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Regular.eot');
+	src: local('☺'), url('../fonts/Montserrat-Regular.woff') format('woff'), url('../fonts/Montserrat-Regular.ttf') format('truetype'), url('../fonts/Montserrat-Regular.svg') format('svg');
+	font-weight:700;
+	font-style: bold;
+}
+
+
+
+$bg-gradient-safe: rgb(188,156,255);
+$bg-gradient:linear-gradient(180deg, rgba(188,156,255,1) 0%, rgba(139,164,249,1) 100%);
+
+
+
+
+$white:#fff;
+
+
+$r_minmob_320:        320px;
+$r_mob_360:           360px;
+$r_mob_400:           400px;
+$r_mob_500:           500px;
+$r_mob_600:           600px;
+$r_tab_850:           850px;
+$r_desk_1000:         1000px;
+$r_desk_hd_1300:      1300px;
+$r_desk_md_1500:      1500px;
+$r_full_hd_1650:      1650px;
+
+html {
+    font-size: 10px;
+}
+body {
+
+    background-color: #E5E5E5;
+    color:rgba(31, 32, 65, 0.75);
+    font-size: 1.4rem;
+    font-family: 'Montserrat',Arial, sans-serif;
+    @media (max-width: $r_tab_850) {
+        font-size: 14px;
+}
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-family: 'Montserrat',Arial, sans-serif;
+    font-weight: 700;
+    color: rgba(31, 32, 65, 1);
+    
+}
+
+h2 {
+    font-size: 1.9rem;
+    font-family: 'Montserrat','Arial', sans-serif;
+    font-weight: 700;
+    color: rgba(31, 32, 65, 1);
+    
+}
+
+
+h3 {
+    font-size: 1.2rem;
+    color: rgba(31, 32, 65, 1);
+    text-transform: uppercase;
+}
+
+
+button {
+    font-size: 1.2rem;
+    font-family: 'Montserrat',Arial, sans-serif;
+    font-weight: 700;
+    &:focus {
+        outline: none;
+    }
+}
