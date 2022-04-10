@@ -1,1 +1,0 @@
-{"version":3,"file":"user.js","mappings":";;;;;AAAA;AAIA,sC","sources":["webpack://webpack5_new/./src/user.js"],"sourcesContent":["// import $ from \"jquery\";\n\n\n\n// $('.user').html('user is working');"],"names":[],"sourceRoot":""}
