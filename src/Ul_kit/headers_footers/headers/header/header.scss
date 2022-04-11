@@ -19,14 +19,14 @@
     
 }
 
-.logo-header-wrap {
+.logo-header__wrap {
     margin-left: 1rem;
     @media (max-width: $r_mob_360) {
         margin-left: .5rem;  
     }
 }
 
-.nav-wrap {
+.nav__wrap {
     margin-left: 24.9rem;
     margin-right: 1.99rem;
     @media (max-width: $r_desk_md_1500) {

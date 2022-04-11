@@ -73,3 +73,31 @@
 }
 }
 
+.user {
+    position: relative;
+    white-space: nowrap;
+    list-style: none;
+    &-link {
+    position: relative;
+    text-decoration: none;
+    color: rgba(31, 32, 65, 0.5);
+    transition: 0.2s ease color;
+    &::after {
+        content: '';
+        width: 1px;
+        height: 30px;
+        position: absolute;
+        background-image: url('../mixins/line.png');
+        display: block;
+        background-size: cover;
+        background-repeat: no-repeat;
+        right: 11.9rem;
+        bottom:-33%;
+        @media (max-width: $r_tab_850) {
+            height:2rem;
+            right: 8rem;
+            bottom:-50%;
+        }
+    }
+}
+}
