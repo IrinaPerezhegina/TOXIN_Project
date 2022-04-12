@@ -1,0 +1,17 @@
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 11.1rem;
+    height: 2.4rem;
+    &-item {
+       width: 2.4rem;
+        height: 2.4rem;
+    }
+        &:nth-child(2) {
+            margin-left: 10rem;
+            
+    }
+        
+}
