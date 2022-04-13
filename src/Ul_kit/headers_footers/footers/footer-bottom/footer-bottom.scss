@@ -4,7 +4,7 @@
     margin: 0 auto;
     &__container {
         max-width: 117.5rem;
-        max-height: 3.8rem;
+        height: 3.8rem;
         background: rgba(255, 255, 255, 1);
         font-size: 1.4rem;
         display: flex;
@@ -21,8 +21,8 @@
       white-space: nowrap;
     }
     &__contact {
-        margin-right: .2rem; 
-        
+        margin-right: .25rem; 
+        margin-top: .3rem;
       }
 }
 
