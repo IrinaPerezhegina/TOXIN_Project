@@ -3,23 +3,135 @@
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    &-item {
-        width: 2.4rem;
-        height:2.4rem;
-        border: none;
-        display: block;
-        background-size: cover;
-        background-repeat: no-repeat;
-    &-twitter {
-        background-image: url('../Ul_kit/contacts/twitter.svg');
-           
+    width: 11.2rem;
+    height: 2.4rem;
+    @media (max-width: $r_mob_650) {
+        width:8.2rem;
+        height: 1.9rem;
     }
-    &-facebook {
-        background-image: url('../Ul_kit/contacts/facebook.svg');
-           
+    @media (max-width: $r_mob_400) {
+        width:6.6rem;
+        height:1.9rem;
     }
-    &-facebook  {
-        background-image: url('../Ul_kit/contacts/instagram.svg');
-    } 
-    }             
+    @media (max-width: $r_mob_360) {
+        width:4.6rem;
+        height:1.9rem;
+    }
+    &-link {
+        text-decoration: none;
+        color: rgba(31, 32, 65, 0.5);
+        transition: 0.2s ease color;
+        
+    }
+    &__img {
+        &-twitter {
+            border: none;
+            display: block;
+            background-size:contain;
+            background-repeat: no-repeat;
+            background-image: url('../Ul_kit/contacts/twitter.svg');
+            width: 2.4rem;
+            height:2.4rem;
+            @media (max-width: $r_mob_650) {
+                width: 1.6rem;
+                height:1.6rem;  
+            }
+            @media (max-width: $r_mob_360) {
+                width: 1.2rem;
+                height:1.2rem;
+            }
+        }
+        &-facebook {
+            border: none;
+            display: block;
+            background-size:contain;
+            background-repeat: no-repeat;
+            background-image: url('../Ul_kit/contacts/facebook.svg');
+            margin-bottom: .2rem;
+            width: 2.15rem;
+            height:2.15rem;
+            margin-right: .1rem;
+            @media (max-width: $r_mob_650) {
+                width: 1.6rem;
+                height:1.6rem;
+            }
+            @media (max-width: $r_mob_360) {
+                width: 1.2rem;
+                height:1.2rem;
+            }
+        }
+        &-instagram {
+            border: none;
+            display: block;
+            background-size:contain;
+            background-repeat: no-repeat;
+            background-repeat: no-repeat;
+            background-image: url('../Ul_kit/contacts/instagram.svg');
+            margin-bottom: .2rem;
+            width: 2.4rem;
+            height:2.15rem;
+            @media (max-width: $r_mob_650) {
+                width: 1.6rem;
+                height:1.6rem;
+            }
+            @media (max-width: $r_mob_360) {
+                width: 1.2rem;
+                height:1.2rem;
+            }
+        }
+    }   
+
 }
+
+
+
+// &-item {
+//     z-index: +10;
+//     border: none;
+//     display: block;
+//     background-size:contain;
+//     background-repeat: no-repeat;
+//     &:nth-child(1) {
+//         background-repeat: no-repeat;
+//         background-image: url('../Ul_kit/contacts/twitter.svg');
+//         width: 2.4rem;
+//         height:2.4rem;
+//         @media (max-width: $r_mob_650) {
+//             width: 1.6rem;
+//             height:1.6rem;
+//     }
+//         @media (max-width: $r_mob_360) {
+//         width: 1.2rem;
+//         height:1.2rem;
+//     }
+//     }
+//     &:nth-child(2) {
+//     background-image: url('../Ul_kit/contacts/facebook.svg');
+//     margin-bottom: .2rem;
+//     width: 2.15rem;
+//     height:2.15rem;
+//     margin-right: .1rem;
+//     @media (max-width: $r_mob_650) {
+//         width: 1.6rem;
+//         height:1.6rem;
+//     }
+//     @media (max-width: $r_mob_360) {
+//         width: 1.2rem;
+//         height:1.2rem;
+//     }
+//     }
+//     &:nth-child(3) {
+//     background-image: url('../Ul_kit/contacts/instagram.svg');
+//     margin-bottom: .2rem;
+//     width: 2.4rem;
+//     height:2.15rem;
+//     @media (max-width: $r_mob_650) {
+//         width: 1.6rem;
+//         height:1.6rem;
+//     }
+//     @media (max-width: $r_mob_360) {
+//         width: 1.2rem;
+//         height:1.2rem;
+//     }
+//     }
+// }

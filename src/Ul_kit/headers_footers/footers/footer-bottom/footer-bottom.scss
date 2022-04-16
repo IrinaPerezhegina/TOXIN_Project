@@ -19,10 +19,17 @@
     &__text {
       margin-left: 1.3rem; 
       white-space: nowrap;
+      @media (max-width: $r_mob_400) {
+        margin-left: .5rem;
+    }
     }
     &__contact {
-        margin-right: .25rem; 
+        margin-right: .13rem; 
         margin-top: .3rem;
+        @media (max-width: $r_mob_400) {
+          margin-right: .1rem; 
+          margin-left: .5rem; 
+      }
       }
 }
 
