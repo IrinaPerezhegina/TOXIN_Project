@@ -1,0 +1,52 @@
+footer 
+    .footer
+        .footer__container 
+            .footer-item
+                .footer__logo-wrap
+                    include  ../../../logo/logo.pug
+                .footer__text-wrap
+                    +text
+            .footer-item
+                ul.footer-list
+                    li.footer-list__item
+                        a(href="/mock-address/change-me").footer-list__link-title навигация 
+                    li.footer-list__item
+                        a(href="/mock-address/change-me").footer-list__link О нас
+                    li.footer-list__item
+                        a(href="/mock-address/change-me").footer-list__link Новости 
+                    li.footer-list__item
+                        a(href="/mock-address/change-me").footer-list__link Служба поддержки
+                    li.footer-list__item
+                        a(href="/mock-address/change-me").footer-list__link Услуги
+            .footer-item
+                ul.footer-list
+                    li.footer-list__item
+                        a(href="/mock-address/change-me").footer-list__link-title о нас
+                    li.footer-list__item
+                        a(href="/mock-address/change-me").footer-list__link О сервисе
+                    li.footer-list__item
+                        a(href="/mock-address/change-me").footer-list__link Наша команда
+                    li.footer-list__item
+                        a(href="/mock-address/change-me").footer-list__link Вакансии
+                    li.footer-list__item
+                        a(href="/mock-address/change-me").footer-list__link Инвесторы
+            .footer-item
+                ul.footer-list
+                    li.footer-list__item
+                        a(href="/mock-address/change-me").footer-list__link-title Служба поддержки
+                    li.footer-list__item
+                        a(href="/mock-address/change-me").footer-list__link Соглашения
+                    li.footer-list__item
+                        a(href="/mock-address/change-me").footer-list__link Сообщества
+                    li.footer-list__item
+                        a(href="/mock-address/change-me").footer-list__link Связь с нами
+            .footer-item
+                ul.footer-list
+                    li.footer-list__item
+                        a(href="/mock-address/change-me").footer-list__link-title Подписка
+                    li.footer-list__item
+                        a(href="/mock-address/change-me").footer-list__link Получайте специальные <br> предложения и новости сервиса
+                    li.footer-list__item-form
+                        include  ../../../form_elements/subscription/email-input.pug         
+        .footer__bottom-wrap 
+            include  ../footer-bottom/footer-bottom.pug

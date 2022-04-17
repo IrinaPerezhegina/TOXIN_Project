@@ -1,0 +1,31 @@
+.email-form {
+    position: relative;
+} 
+.email-input {
+    width: 24.3rem;
+    height: 3.8rem;
+    border-color: $Dark25;
+    border-radius: .4rem;
+    padding-left: 1.2rem;
+    font-size: 1.4rem;
+    font-family: 'Montserrat',Arial, sans-serif;
+   
+    &::placeholder{
+        color: $Dark25;
+    }
+    
+}
+
+.email-btn {
+    position: absolute;
+    height: 1.8rem;
+    width: 1.8rem;
+    background-image: url('../Ul_kit/form_elements/subscription/arrow_forward.svg');
+    background-repeat: no-repeat;
+    background-size:contain;
+    border: none;
+    background-color: $white;
+    right: 1.3rem;
+    top: 31%;
+    cursor: pointer;
+}
