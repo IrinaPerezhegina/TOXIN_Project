@@ -1,12 +1,10 @@
 .email {
     position: relative;
-    width: 24.2rem;
-    height: 3.8rem;
     
 } 
 .email__input {
     width: 24.2rem;
-    height: 3.8rem;
+    height: 3.9rem;
     border-color: $Dark25;
     border-radius: .4rem;
     padding-left: 1.24rem;
@@ -32,11 +30,13 @@
     background-size:contain;
     border: none;
     background-color: $white;
-    right: 1.3rem;
-    top: 31%;
+    left: 22.9rem;
+    top: 32%;
     cursor: pointer;
     @media (max-width: $r_desk_hd_1300) {
         height: 1.3rem;
         width: 1.3rem;
+        left: 21.4rem;
+        top: 32%;
     }
 }

@@ -19,39 +19,37 @@
         }
         @media (max-width: $r_desk_1000) {
             display: grid;
-            justify-content: center;
-            grid-template-columns: 2fr 3fr 1fr;
-            gap: 2rem;
-            margin-bottom: 3rem;
-            margin-left: 5rem;
-            margin-right: 5rem;
-           
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1rem;
+            grid-template-areas: 'logo a b' 'logo c d';
+            padding-top: 1rem;
+            padding-bottom: 3rem;
         }
         // @media (max-width: $r_desk_1000) {
         //     display: none;
             
-        // }
-    }
+        }
     &-item {
         &:nth-child(1) {
+            margin-bottom: .4rem;
             margin-left: 1rem;
-            // grid-area: a;
-
+            grid-area: logo;
         }
         &:nth-child(2) {
             margin-left: 4.6rem;
+            grid-area: a;
             @media (max-width: $r_desk_hd_1300) {
                 margin-left: 2rem;
-                // grid-area: b;
+                 
             }
             @media (max-width: $r_desk_1000) {
-                margin-left: 10rem;
-                // grid-area: b;
+                margin-left: 2rem;
+                
             }
         }
         &:nth-child(3) {
             margin-left: 3.8rem;
-            // grid-area: c;
+            grid-area: b;
             @media (max-width: $r_desk_hd_1300) {
                 margin-left: 2rem;
                 
@@ -60,21 +58,21 @@
         &:nth-child(4) {
             margin-left: 7.3rem;
             margin-bottom: 3.8rem;
-            // grid-area: d;
+            grid-area: c;
             @media (max-width: $r_desk_hd_1300) {
                 margin-left: 2rem;
                 
             }
             @media (max-width: $r_desk_1000) {
-                margin-left: 15rem;
+                margin-left: 2rem;
                 
             }
         }
         &:nth-child(5) {
-            margin-left: 3.1rem;
+            margin-left: 3.2rem;
             margin-right: 1rem;
-            margin-bottom: 4.1rem;
-            // grid-area: e;
+            margin-bottom:4.1rem;
+            grid-area: d;
             @media (max-width: $r_desk_hd_1300) {
                 margin-left: 1.5rem;
                 
@@ -95,54 +93,57 @@
         list-style: none;
         padding-left: 0;
         margin: 0;
-        &:nth-child(1) {
-            margin-top: 2.4rem;
-            margin-right: 2rem;
-            line-height: 1.3;
-        }
+        margin-top: 2.4rem;
+        margin-right: 2rem;
+        line-height: 1.3;
         &__item {
             margin-bottom:2rem ;
             &-form {
-                
-                margin-top:1rem;
+                margin-top:2rem;
+                padding-bottom:.3rem;
+            }
+            &-text{
+                padding-bottom:.4rem;
             }
         }
         &__link {
-            font-size: 1.4rem;
-            color: $Dark50;
-            text-decoration: none;
-            @media (max-width: $r_desk_hd_1300) {
-                font-size: 1rem;
-            }
+        font-size: 1.4rem;
+        color: $Dark50;
+        text-decoration: none;
+        @media (max-width: $r_desk_hd_1300) {
+            font-size: 1rem;
+        }
             &-title {
-            color: $Dark50;
-            font-size: 1.2rem;
-            text-transform: uppercase;
-            text-decoration: none;
-            list-style: none;
-            font-weight: 700;
+                color: $Dark50;
+                font-size: 1.2rem;
+                text-transform: uppercase;
+                text-decoration: none;
+                list-style: none;
+                font-weight: 700;
             @media (max-width: $r_desk_hd_1300) {
                 font-size: 1rem;
-                
             }
             }
             &-text {
-                list-style: none;
-                text-decoration: none;
-                font-size: 1.4rem;
+                
+                line-height: 1.6;
                 color: $Dark50;
-                line-height: 1.7;
+                font-size: 1.4rem;
+                text-decoration: none;
+                list-style: none;
                 @media (max-width: $r_desk_hd_1300) {
                     font-size: 1rem;
-                    
                 }
+                
             }
-
-        }
-} 
+            
+        } 
+    }
 }
+
+    
 .footer__mobile-wrap {
     display: none;
-        
+}      
     
-}
+
