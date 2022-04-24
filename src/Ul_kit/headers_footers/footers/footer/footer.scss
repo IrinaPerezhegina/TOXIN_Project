@@ -25,9 +25,9 @@
             padding-top: 1rem;
             padding-bottom: 3rem;
         }
-        // @media (max-width: $r_desk_1000) {
-        //     display: none;
-            
+        @media (max-width: $r_tab_768) {
+            display: none;
+        }
         }
     &-item {
         &:nth-child(1) {
@@ -140,10 +140,17 @@
         } 
     }
 }
-
+.footer__bottom-wrap{
+    @media (max-width: $r_tab_768) {
+        display: none;
+    } 
+} 
     
 .footer__mobile-wrap {
     display: none;
+    @media (max-width: $r_tab_768) {
+        display: block;
+    } 
 }      
     
 

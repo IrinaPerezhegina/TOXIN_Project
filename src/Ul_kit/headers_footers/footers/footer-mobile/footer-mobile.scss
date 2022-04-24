@@ -1,0 +1,30 @@
+.footer-mobile {
+    &__container {
+        background: rgba(255, 255, 255, 1);
+        max-width: 75rem;
+        height: 33.5rem;
+        align-items: center;
+        padding-left: .3rem;
+        padding-right: 1.5rem;
+        padding-top: 1.6rem;
+        padding-bottom: 1.6rem;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__logo-wrap {
+     margin-left: 1rem;
+    //    margin-bottom: 1.7rem;
+    }
+    &__text-wrap {
+        margin-left: 1.3rem;
+        margin-top:2.2rem;
+        margin-bottom: 2.4rem;
+     }
+    &__contacts-wrap {
+    margin-left: 1.3rem;
+    // margin-top: 3.3rem;
+     }
+
+}
