@@ -1,0 +1,38 @@
+.icon{
+    display: flex;
+    align-items: center;
+    &__img {
+        position: relative;
+        width: 41.5px; 
+        height: 41.5px;
+        border-radius: 50%;
+        border: 3px solid $Dark25;
+        &::after {
+            content: '';
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            top: 15px;
+            right: 19.1px;
+            background-image: url('../icon/left.svg');
+            display: block;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        &::before {
+            content: '';
+            width: 11px;
+            height:9px;
+            position: absolute;
+            top: 15.1px;
+            right: 8.8px;
+            background-image: url('../icon/rigth.svg');
+            display: block;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+
+
