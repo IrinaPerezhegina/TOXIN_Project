@@ -1,0 +1,51 @@
+mixin fonts(title,text,textnext)
+    .font
+        .font__name(class=attributes.class) #{title}
+        .font__text(class=attributes.class)
+            .fint__text-item #{text} 
+            .font__text-item #{textnext}
+
+mixin fonts-body(title,text,textnext)
+    .font
+        .font__name #{title}
+        .font__text-body
+            .fint__text-item #{text} 
+            .font__text-item #{textnext}
+
+mixin color(title,text)
+    .color
+        .color__square(class=attributes.class)
+        .color__name
+            .color__name-item #{title}
+            .color__name-item #{text}
+
+
+
+.colors-type
+    .colors-type-item
+        include  ../../icon/icon.pug
+    .colors-type-item
+        .colors-type__colors
+            .colors-item
+                +color("Dark Shade 100%","#1F2041")(class="dark100")
+            .colors-item
+                +color("Dark Shade 75%","#1F2041")(class="dark75")
+            .colors-item
+                +color("Dark Shade 50%","#1F2041")(class="dark50")
+            .colors-item
+                +color("Dark Shade 25%","#1F2041")(class="dark25")
+            .colors-item
+                +color("Dark Shade 5%","#1F2041")(class="dark5")
+            .colors-item
+                +color("Purple","#BC9CFF")(class="purple")
+            .colors-item
+                +color("Green","#6FCF97")(class="green")
+        .colors-type__fonts
+            .fonts-item
+                +fonts("H1","This one is the sub-section or","widget title")(class="fonth1")(class="fonth1")
+            .fonts-item
+                +fonts("H2","Next one is the item title inside","widgets")(class="fonth2")
+            .fonts-item
+                +fonts("H3","This is a label or CTA text")(class="fonth3")
+            .fonts-item
+                +fonts-body("Body","This is the body text which is used for most","of the design, like paragraphs, lists, etc.")
